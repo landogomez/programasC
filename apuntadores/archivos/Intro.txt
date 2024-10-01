@@ -1,0 +1,18 @@
+Parametro               Abrir el archivo en modo
+r                           Lectura. El archivo debe existir
+w                           Escritura. Si el archivo no existe, se crea, si existe se sobreescribe.
+a                           Escritura al final del documento. Si no existe se crea.
+rb                          Binario. Para lectura.
+r+                          Lectura y escritura. El archivo debe existir.
+w+                          Crear un archivo para escritura. Si existe se sobreescribe
+rb+                         Binario. Para actualizacion (lectura y escritura).
+a+                          Añade o crea un archivo de texto para lectura.     
+r+b                         Abre un archivo binario para lectura.  
+w+b                         Crea un archivo binario para lectra / escritura.
+a+b                         Añade o crea un archivo binario para lectura / escritura.
+
+
+fputc(Cracater, ApuntadorArchivo) es una función que nos permite escribir un caracter en el archivo, regresa el
+caracter que se presionó en caso de que la operación se realice con éxito o EOF si falló. El apuntador es el que nos brinda la función fopen.
+
+fclose(ApuntadorArchivo) guarda los cambios en el archivo, cierra la conexión y libera los recursos usados por el apuntador.
